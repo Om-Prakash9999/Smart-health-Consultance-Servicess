@@ -1,0 +1,800 @@
+<html lang="en">
+<head>
+  <title>Smart health consultant</title>
+  <link rel="icon" sizes="114x114" href="apple-icon-76x76.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=""><span class="glyphicon glyphicon-home"></span> Home</a>
+    </div>
+
+    <ul class="nav navbar-nav">  
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">Specialist<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="doctorlist.html">Physician</a></li>
+          <li><a href="doctorlist.html">Surgeon</a></li>
+          <li><a href="doctorlist.html">Cardiologist</a></li>
+          <li><a href="doctorlist.html">Dentist</a></li>
+          <li><a href="doctorlist.html">Bone Specialist</a></li>
+          <li><a href="doctorlist.html">Children Specialist</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="#dropdown" href="">Reviews<span class="#caret"></span></a></li>
+
+     
+      <li><a href="faq.html">FAQ'S</a></li>
+      
+
+      <li><a href="about.html">About Us</a></li>
+      
+    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
+
+        <li><a data-toggle="modal" data-target="#myModal" data-backdrop="false" style="margin-left:720px ">
+               Login
+            </a>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" 
+                     data-dismiss="modal">
+                         <span aria-hidden="true">&times;</span>
+                         <span class="sr-only">Close</span>
+                  </button>
+                  <center> <h4 class="modal-title" id="myModalLabel">
+                           Login
+                         </h4></center>
+                </div>
+              
+              <!-- Modal Body -->
+              <div class="modal-body">
+                  
+                  <form action="" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label  class="col-sm-3 control-label"
+                                for="inputEmail3">Email</label>
+                      <div class="col-sm-7">
+                          <input type="email" class="form-control" 
+                          id="inputEmail3" name="inputEmail3" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputPassword3" >Password</label>
+                      <div class="col-sm-7">
+                          <input type="password" class="form-control"
+                              id="inputPassword3" name="inputPassword3" placeholder="Password" required>
+                      </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox"/> Remember me
+                          </label>
+                        </div>
+                      </div>
+                    </div>              
+    
+  <html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Login with Google</title>
+  <style type="text/css">
+  h1{font-family:Arial, Helvetica, sans-serif;color:#999999;}
+  </style>
+  </head>
+  <body>
+  <div></div>
+  </body>
+  </html></div>
+          <a href="">Forget Password</a>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <div class="col-sm-1">
+           <input type="submit" name="signup">
+         </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div></form>
+          
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li><a data-toggle="modal" data-target="#mysignup" data-backdrop="false">
+         Sign Up
+      </a>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="mysignup">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+            <div class="modal-header">
+                  <button type="button" class="close" 
+                        data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                  </button>
+                  <center><h4 class="modal-title" id="myModalLabel">
+                      Sign Up
+                  </h4></center>
+              </div>
+              
+              <!-- Modal Body -->
+              <div class="modal-body">
+ <form class="form-horizontal" name="f1" role="form" action="signup.php" method="POST" onsubmit="return validation()">
+                    <div class="form-group">
+                      <label  class="col-sm-3 control-label"
+                                for="inputText3">First Name</label>
+                      <div class="col-sm-9">
+                          <input type="inputText3" class="form-control" 
+                          id="inputfname3" name="inputfname3" placeholder="First Name" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputtext3" >Last Name</label>
+                      <div class="col-sm-9">
+                          <input type="inputText3" class="form-control"
+                              id="inputlname3"  name="inputlname3" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="email" >Email id</label>
+                      <div class="col-sm-9">
+                          <input type="email" class="form-control"
+                              id="inputEmail3"  name="inputEmail3" placeholder="Email id" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputPassword3" >Password</label>
+                      <div class="col-sm-9">
+                          <input type="password" class="form-control"
+                              id="inputPassword3"  name="inputPassword3" placeholder="Password"  maxlength="16" minlength="6" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputPassword3" >Confirm Password</label>
+                      <div class="col-sm-9">
+                          <input type="password" class="form-control"
+                              id="inputPassword3"  name="inputPassword3" placeholder="confirm Password"  maxlength="16" minlength="6" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox"/> I agree with <u>Term and services</u> & <u>Privacy</u>
+                          </label>
+                        </div>
+                      </div>
+                    </div>              
+              </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <div class="col-sm-1">
+           <input type="submit" name="signup">
+         </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div></form>
+          
+        </div>
+      </div>
+    </div></li>
+    </ul>
+  </div>
+        
+  </ul>
+</div>
+</nav>
+
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row" id="physician">
+      <h4 class="doctor list" style="text-align: center;font-size: 60px"><b><em>Top Physician Doctors</em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/physician/surgeon1.jpeg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Name:-Dr Abdul Manon<br>
+		 Qualification:- MBBS<br>
+		 Speciality:- General physician<br> 
+		 Department:- General Medicine<br>
+		 Locality:- Jaipur<br>
+		 <!--Consultant in:- Get well soon hospital<br>--> 
+		 EXPERIENCE:- 5 year<br>
+		 Contact  no:- 9392989098<br>
+		 Email:- abdulm@gmail.com<br>
+		 Language:- Hindi, English </p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/physician/surgeon2.jpeg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Aditya ravi chintz<br>
+		Department:- Internal medicine  physician<br> 
+		Speciality:-General Medio<br>
+		Locality:- Jaipur<br>
+		Consult in:- Jaipur hospital<br>
+		Experience:-10 years<br>
+		Contact:- 9890909090<br>
+		Email:- aditya@gmail.com<br>
+		Language- English</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/physician/surgeon3.jpeg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Anand Mishra<br>
+		Qualifications:- MBBS,DNB<br>
+		Speciality:- general medicine<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 14 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9897909695<br>
+		Email:- anandm@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/physician/surgeon5.jpeg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Aman kumar<br>
+		Qualifications:- MBBS,MD<br>
+		Department:- internal medicine  physician<br> 
+		Speciality:- General medicine<br>
+		Locality:- Jaipur <br>
+		Consultant  in:- Jaipur hospital<br> 
+		Experience:-29 years<br>
+		Language:-Hindi, English<br>
+		Contact:- 9797909093<br>
+		Email:- aman12@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/physician/surgeon4.jpeg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Akila Mani<br>
+		Qualifications:-MBBS, MRCP, PG diploma<br> 
+		Department:- Internal medicine physician<br> 
+		Speciality:- General medicine <br>
+		Locality:-Jaipur<br>
+		Consult in :- Apollo hospital<br> 
+		Experience-4 years<br>
+		Language:- English,hindi<br>
+		Contact:- 9890909896<br>
+		Email:-  Akilam@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row" id="Surgeon">
+      <h4 class="doctor list" style="text-align: center;font-size: 60px"><b><em>Top Surgeon Doctors</em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/surgeon/surgeon 1.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Albinus Lakra<br>
+		Qualification:- Mbbs, MS(gen surgery)<br>
+		Speciality:- General Surgery<br>
+		Locality:-jaipur<br>
+		Consult in :- Jaipur hospital<br> 
+		Experience:-15 years<br>
+		Contact:- 9098099890<br>
+		Email:-lakra@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/surgeon/surgeon 2.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Anand Mishra<br>
+		Qualifications:- MR, Frcs<br>
+		Speciality:- General surgery<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 14 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897909695<br>
+		Email:- amitabha@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/surgeon/surgeon 3.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Debdoot soren<br>
+		Qualifications:- Ms(gen surgeon)<br>
+		Speciality:- general surgery <br>
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 16 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897909890<br>
+		Email:- debdoot@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/surgeon/surgeon 4.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Anand Mishra<br>
+		Qualifications:- MNAMS,DNB<br>
+		Speciality:- surgical<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 24years<br>
+		Language:- hindi,English<br> 
+		Contact:- 989799890<br>
+		Email:- gaurav@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/surgeon/surgeon 5.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Himanshu  roy<br>
+		Qualifications:- MS,FIAs<br>
+		Speciality:- general surgeon<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 14 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897998078<br>
+		Email:- himanshu@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row" id="Cardiologist">
+      <h4 class="doctor list" style="text-align: center;font-size: 60px"><b><em>Top Cardiologist Doctors</em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Cardiologist/cardiologist 1.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Ashok Seth<br>
+		Qualifications:- MBBS<br>
+		Speciality:- Cardiologist<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  apollo hospital<br> 
+		Experience:- 34 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9890090909<br>
+		Email:- ashokseth@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Cardiologist/cardiologist 2.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Naresh Treshan<br>
+		Qualifications:- MBBS, Diplomate<br>
+		Speciality:- Cardiologist<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 19 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9890087870<br>
+		Email:- naresh@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Cardiologist/cardiologist 3.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Devi Prasad shetty<br>
+		Qualifications:- MBBS,Ms,FRCs<br>
+		Speciality:- Cardio-Thoracic Surgeon<br>
+		Locality:- Jaipur<br>
+		Consult in:-  apollo hospital<br> 
+		Experience:- 13 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9890090909<br>
+		Email:- prasad@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Cardiologist/cardiologist 4.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Ajay Kaul<br>
+		Qualifications:- MS-General surgery,MBBS<br>
+		Speciality:- general surgeon<br>
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 27 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9890098900<br>
+		Email:- ajaykaul@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Cardiologist/cardiologist 5.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr V K Chopra<br>
+		Qualifications:- MBBSs,DNB,Dm<br>
+		Speciality:- Cardiologist<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 18 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9890078789<br>
+		Email:-  vkchopra@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row" id="Dentist">
+      <h4 class="doctor list" style="text-align: center;font-size: 60px"><b><em>Top Dentists</em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Dentist/dentist 1.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Anil kohli<br>
+		Qualifications:- BDS, MDS,DNB<br>
+		Speciality:- Endodontist,Dental surgeon<br>
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 30 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9897999999<br>
+		Email:- kohli@gmail.com </p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Dentist/dentist 2.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Leena Sharma<br>
+		Qualifications:-BDS,MDS<br>
+		Speciality:- smile design,Dental examination<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 23years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9454599999<br>
+		Email:- leena@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Dentist/dentist 3.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Parag M Katri<br>
+		Qualifications:- BDS,MDS<br>
+		Speciality:- cosmetic gum treatment<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 14 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897808080<br>
+		Email:- parag@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Dentist/dentist 4.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Nisha Bali<br>
+		Qualifications:- Bds,Esthetic dentrisity<br>
+		Speciality:- Implant dentisity<br>
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 20 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897900000<br>
+		Email:- nishab@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Dentist/dentist 5.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Anusara Sharma<br>
+		Qualifications:- BDS,MDS<br>
+		Speciality:- surgical and clinical  expertise<br>
+		Locality:- Jaipur<br>
+		Consult in:-  apollo hospital<br> 
+		Experience:- 24 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9890099009<br>
+		Email:- anusuya@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row" id="Bone_Specialist">
+      <h4 class="doctor list" style="text-align: center;font-size: 60px"><b><em>Top Bone Specialist </em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Bone Specialist/bone specialist 1.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Rajgopal <br>
+		Qualifications:- MBBS,MS<br>
+		Speciality:- knee surgery,joint replacement<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 25 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9897009900<br>
+		Email:- rajgopal@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Bone Specialist/bone specialist 2.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr I.P.S Oberoi<br>
+		Qualifications:- MBBS,Ms<br>
+		Speciality:- Arthroscopic  surgery<br>
+		Locality:- Jaipur<br>
+		Consult in:-  apollo hospital<br> 
+		Experience:- 30 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9897000000<br>
+		Email:- Oberoi@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Bone Specialist/bone specialist 3.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr A.B. Govindraj<br>
+		Qualifications:- MBBS,Ms<br>
+		Speciality:- orthopedictian<br>
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 29 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9890099009<br>
+		Email:- rajushah@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Bone Specialist/bone specialist 4.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Pradeep sharma<br>
+		Qualifications:- MBBS,Ms<br>
+		Speciality:- knee repla6<br>
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 26 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9890909090<br>
+		Email:- Pradeep@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Bone Specialist/bone specialist 5.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Gyan  Sagar Tucker<br>
+		Qualifications:- MBBS,Ms<br>
+		Speciality:- arthroscopic  surgery<br>
+		Locality:- Jaipur<br>
+		Consult in:-  apollo hospital<br> 
+		Experience:- 29 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9890090909<br>
+		Email:- sagat@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row"id="Child_Specialist">
+      <h4 class="doctor list" style="text-align: center;font-size: 60px"><b><em>Top Child Specialist </em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Child Specialist/2.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Nana C Joshu<br>
+		Qualifications:- MBBS,Diploma-child health<br>
+		Speciality:- Neoonatology <br>
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:-  50 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9897999999<br>
+		Email:- nanajoshi@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Child Specialist/3.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Sunit Chandra<br>
+		Qualifications:- MBBS,MD<br>
+		Speciality:- pediatrics<br>
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 12 years<br>
+		Language:- hindi,English <br>
+		Contact:- 9897998909<br>
+		Email:- chandra@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Child Specialist/4.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Aravind kumar<br>
+		Qualifications:- MBBS,MD<br>
+		Speciality:- general speculation<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 20 years<br>
+		Language:- hindi,English <br>
+		Contact:- 98979989898<br>
+		Email:- aarvind@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Child Specialist/1.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Nameeta gupta<br>
+		Qualifications:- MBBS,MD<br>
+		Speciality:- general child specialist<br>
+		Locality:- Jaipur<br>
+		Consult in:-  Apollo hospital<br> 
+		Experience:- 24 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897999090<br>
+		Email:- Nomeeta@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 2%; border-radius: 6%; width:25%">
+      <img src="image/Child Specialist/5.jpg" alt="" style="width: 100%;height: 35%"><br>
+      <p>Dr Raju C shah<br>
+		Qualifications:- MBBS,MD<br>
+		Speciality:- general child health<br> 
+		Locality:- Jaipur<br>
+		Consult in:-  jaipur hospital<br> 
+		Experience:- 30 years<br>
+		Language:- hindi,English<br> 
+		Contact:- 9897999999<br>
+		Email:- rajushah@gmail.com</p>
+         <div class="bio">
+             <h2><button> <em> Get appointment </em></button></h2>
+             
+         </div>
+    </div>
+</div>
+
+
+  <footer class="footer-distributed">
+ 
+ <div class="footer-left" >
+ 
+ <h3><span>Smarthealth Consultance Services</span></h3>
+ 
+ <p class="footer-links">
+ <a href="index.html">Home</a>
+ ·
+ <a href="#">Services</a>
+ ·
+ <a href="about.html">About Us</a>
+ ·
+ <a href="faq.html">Faq</a>
+ ·
+ <a href="contact us.html">Contact Us</a>
+ </p>
+ 
+ <p class="footer-company-name">smarthealth &copy; 2019</p>
+ </div>
+ 
+ <div class="footer-center">
+ 
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>Jaipur</span> Rajsthan, India</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-phone"></i>
+ <p>+91 7479761757</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto:support@company.com">2019pietcsom117@poornima.org</a></p>
+ </div>
+ 
+ </div>
+ 
+ <div class="footer-right">
+ 
+ <p class="footer-company-about">
+ <span>About the company</span>
+ This system aims at maintaining patient health records and even getting appointments from various doctors for related treatments.
+ </p>
+ 
+ <div class="footer-icons">
+ 
+ <a href="https://www.facebook.com/profile.php?id=100007544713015"><i class="fa fa-facebook"></i></a>
+ <a href="https://twitter.com/Ompraka50214832"><i class="fa fa-twitter"></i></a>
+ <a href="https://www.linkedin.com/in/om-prakash-09603b202/"><i class="fa fa-linkedin"></i></a>
+ <a href="https://www.instagram.com/its_me_omaditya/"><i class="fa fa-instagram"></i></a>
+ 
+ </div>
+ 
+ </div>
+ 
+ </footer>
+</body>
+</html>

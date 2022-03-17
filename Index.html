@@ -1,0 +1,431 @@
+<html lang="en">
+<head>
+  <title>Smart health consultant</title>
+  <link rel="icon" sizes="114x114" href="apple-icon-76x76.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <link rel="stylesheet" href="image/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="image/jquery.min.js"></script>
+  <script src="image/popper.min.js"></script>
+  <script src="image/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+      <span class='active' class="glyphicon glyphicon-home"></span> Home</a>
+    </div>
+
+    <ul class="nav navbar-nav">  
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">Specialist<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="physician.html ">Physician</a></li>
+          <li><a href="surgeon.html">Surgeon</a></li>
+          <li><a href="Cardiologist.html ">Cardiologist</a></li>
+          <li><a href="dentist.html ">Dentist</a></li>
+          <li><a href="bone specialist.html ">Bone Specialist</a></li>
+          <li><a href="child specialist.html">Child Specialist</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="#dropdown" href="#Reviews">Reviews<span class="#caret"></span></a></li>
+
+     
+      <li><a href="faq.html">FAQ'S</a></li>
+      
+
+      <li><a href="about.html">About Us</a></li>
+
+
+      <li><a href="contact us.html">Contact Us</a></li>
+
+      
+    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
+
+        <li><a data-toggle="modal" data-target="#myModal" data-backdrop="false" style="margin-left:720px ">
+               Login
+            </a>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" 
+                     data-dismiss="modal">
+                         <span aria-hidden="true">&times;</span>
+                         <span class="sr-only">Close</span>
+                  </button>
+                  <center> <h4 class="modal-title" id="myModalLabel">
+                           Login
+                         </h4></center>
+                </div>
+              
+              <!-- Modal Body -->
+              <div class="modal-body">
+                  
+                  <form action="login.php" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label  class="col-sm-3 control-label"
+                                for="inputEmail3">Email</label>
+                      <div class="col-sm-7">
+                          <input type="email" class="form-control" 
+                          id="inputEmail3" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="password" >Password</label>
+                      <div class="col-sm-7">
+                          <input type="password" class="form-control"
+                              id="inputPassword3" name="password" placeholder="Password" required>
+                      </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox"/> Remember me
+                          </label>
+                        </div>
+                      </div>
+                    </div>              
+    
+
+  </div>
+          <a href="">Forget Password</a>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <div class="col-sm-1">
+           <input type="submit" name="signup">
+         </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div></form>
+          
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li><a data-toggle="modal" data-target="#mysignup" data-backdrop="false">
+         Sign Up
+      </a>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="mysignup">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+            <div class="modal-header">
+                  <button type="button" class="close" 
+                        data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                  </button>
+                  <center><h4 class="modal-title" id="myModalLabel">
+                      Sign Up
+                  </h4></center>
+              </div>
+              
+              <!-- Modal Body -->
+              <div class="modal-body">
+ <form class="form-horizontal" name="f1" role="form" action="signup.php" method="POST" onsubmit="return validation()">
+                    <div class="form-group">
+                      <label  class="col-sm-3 control-label"
+                                for="inputText3">First Name</label>
+                      <div class="col-sm-9">
+                          <input type="inputText3" class="form-control" 
+                          id="inputfname3" name="fname" placeholder="First Name" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputtext3" >Last Name</label>
+                      <div class="col-sm-9">
+                          <input type="inputText3" class="form-control"
+                              id="inputlname3"  name="lname" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="email" >Email id</label>
+                      <div class="col-sm-9">
+                          <input type="email" class="form-control"
+                              id="inputEmail3"  name="email" placeholder="Email id" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputPassword3" >Password</label>
+                      <div class="col-sm-9">
+                          <input type="password" class="form-control"
+                              id="inputPassword3"  name="password" placeholder="Password"  maxlength="16" minlength="6" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label"
+                            for="inputPassword3" >Confirm Password</label>
+                      <div class="col-sm-9">
+                          <input type="password" class="form-control"
+                              id="inputPassword3"  name="confirmPassword" placeholder="confirm Password"  maxlength="16" minlength="6" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                          <label>
+                              <input type="checkbox"/> I agree with <u>Term and services</u> & <u>Privacy</u>
+                          </label>
+                        </div>
+                      </div>
+                    </div>              
+              </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <div class="col-sm-1">
+           <input type="submit" name="signup">
+         </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div></form>
+          
+        </div>
+      </div>
+    </div></li>
+    </ul>
+  </div>
+        
+  </ul>
+</div>
+</nav>
+
+<h1 style="text-align: center; color:grey"><b>Smart Health Consultance Services</b></h1>
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="image\doctor.jpg" alt="" style="width:100%; height: 500px;">
+        <div class="carousel-caption">
+          <h3 style="color:#34495E  
+ ">"Physicians and patients need to work together to pursue care that improves health, avoids harms and eliminates wasteful practices"</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="image\doctor3.jpg" alt="" style="width:100%; height: 500px;">
+        <div class="carousel-caption">
+          <h3 style="color: #34495E ">“The first duty of the physician is to educate the masses not to take medicine.”</h3>
+        </div>
+      </div>
+
+    <div class="item">
+        <img src="image\doctor6.jpg" alt="" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3 style="color:#0000b3 ">“Respect all those in white coats who save our lives- The Healthcare professionals.”</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="image\doctor5.jpg" alt="" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3 style="color: #8E44AD ">“A surgeon is a doctor who can operate and who knows when not to.”</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="image\doctor7.jpg" alt="" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3></h3>
+        </div>
+      </div>
+
+        <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+</div><br><br><br>
+
+
+
+<div class="row" style="background-color: #CFF9F7 ">
+  <center><font style="font-size: 40px;color: red"> <b>Our Specialist</b></font></center><br><br>
+  <div class="col-md-3 col-md-offset-1 well" style="background-color: white">
+    <center><font style="font-size: 30px">Physician</font></center><br>
+    <a href="physician.html"><img src="image\physician.jpg" style="width: 100%;height: 200px"></a>
+    
+  </div>
+  <div class="col-md-3 col-md-offset-1 well" style="background-color: white">
+    <center><font style="font-size: 30px">Surgeon</font></center><br>
+    <a href="surgeon.html"><img src="image\surgeon.jpg" style="width: 100%;height: 200px"></a>
+  </div>
+   <div class="col-md-3 col-md-offset-1 well" style="background-color: white">
+    <center><font style="font-size: 30px">cardiologist</font></center><br>
+    <a href="cardiologist.html"><img src="image\Cardiologist\cardiologist 1.jpg" style="width: 100%;height: 200px"></a>
+  </div>
+  <div class="col-md-3 col-md-offset-1 well" style="background-color: white">
+    <center><font style="font-size: 30px">Child Specialist </font></center><br>
+    <a href="child specialist.html"><img src="image\child specialist.jpg" style="width: 100%;height: 200px"></a>
+  </div>
+   <div class="col-md-3 col-md-offset-1 well" style="background-color: white">
+    <center><font style="font-size: 30px">Dentist</font></center><br>
+    <a href="dentist.html"><img src="image\dentist.jpg" style="width: 100%;height: 200px"></a>
+  </div>
+  <div class="col-md-3 col-md-offset-1 well" style="background-color: white">
+    <center><font style="font-size: 30px">Bone Specialist</font></center><br>
+    <a href="bone specialist.html"><img src="image\bone specialist.jpeg" style="width: 100%;height: 200px"></a>
+  </div>
+  
+</div><br><br><br>
+
+
+
+<div class="row well" style="width: 110%; height: 500px; background-color:  #80ccff">
+  <div class="col-md-12"id="Reviews">
+  <center><h2>Patient say's</h2>
+    <p><b>______________</b></p></center>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+<div class="item active">
+<div class="col-md-12">
+ <div class="col-md-3 col-md-offset-1">
+   <center><img src="image/patient1.jpg" class="img-circle" style="width: 100%;height: 250px;margin-top: 50px" ></center>
+ </div> 
+ <div class="col-md-7" style="margin-top: 135px;margin-right: 10px">
+   <font style="font-size: 20px;color: red;"><b>"Dr.Akila Mani is awesome. He is caring And his Utmost Concern is your comfort."</b></font>
+ </div>
+</div>
+</div>
+<div class="item">
+<div class="col-md-12">
+ <div class="col-md-3 col-md-offset-1">
+   <center><img src="image/patient2.jpg" class="img-circle" style="width: 100%;height: 250px;margin-top: 50px" ></center>
+ </div> 
+ <div class="col-md-7" style="margin-top: 135px;margin-right: 10px">
+   <font style="font-size: 20px;color: red;"><b>"Wonderful Experience with Smart Health Consultant Services. Dr.Anand Mishra was a wonderful surgeon, and the staff was always helpful and kind. They ensured I had a smooth prep, Surgery, and follow-up. I am so glad I chose Smart Health Consultant Services and would highly recommend to anyone."</b></font>
+ </div>
+</div>
+</div>
+<div class="item">
+<div class="col-md-12">
+ <div class="col-md-3 col-md-offset-1">
+   <center><img src="image/patient3.jpg" class="img-circle" style="width: 100%;height: 250px;margin-top: 50px" ></center>
+ </div> 
+ <div class="col-md-7" style="margin-top: 135px;margin-right: 10px">
+   <font style="font-size: 20px;color: red;"><b>"Thank you! your work was so good and appreciable."</b></font>
+ </div>
+</div>
+</div>
+</div>
+    
+     <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+<footer class="footer-distributed">
+ 
+ <div class="footer-left">
+ 
+ <h3><span>Smarthealth Consultance Services</span></h3>
+ 
+ <p class="footer-links">
+ <a href="index.html">Home</a>
+ ·
+ <a href="#">Services</a>
+ ·
+ <a href="about.html">About Us</a>
+ ·
+ <a href="faq.html">Faq</a>
+ ·
+ <a href="contact us.html">Contact Us</a>
+ </p>
+ 
+ <p class="footer-company-name">smarthealth &copy; 2019</p>
+ </div>
+ 
+ <div class="footer-center">
+ 
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>Jaipur</span> Rajsthan, India</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-phone"></i>
+ <p>+91 7479761757</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto:support@company.com">2019pietcsom117@poornima.org</a></p>
+ </div>
+ 
+ </div>
+ 
+ <div class="footer-right">
+ 
+ <p class="footer-company-about">
+ <span>About the company</span>
+ This system aims at maintaining patient health records and even getting appointments from various doctors for related treatments.
+ </p>
+ 
+ <div class="footer-icons">
+ 
+ <a href="https://www.facebook.com/profile.php?id=100007544713015"><i class="fa fa-facebook"></i></a>
+ <a href="https://twitter.com/Ompraka50214832"><i class="fa fa-twitter"></i></a>
+ <a href="https://www.linkedin.com/in/om-prakash-09603b202/"><i class="fa fa-linkedin"></i></a>
+ <a href="https://www.instagram.com/its_me_omaditya/"><i class="fa fa-instagram"></i></a>
+ 
+ </div>
+ 
+ </div>
+ 
+ </footer>
+
+
+</body>
+</html>
